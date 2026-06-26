@@ -150,20 +150,10 @@ Show supported currents and precision modes:
 python ccqm.py schema
 ```
 
-## Documentation and validation
+## Documentation 
 
 - User manual: `docs/user_manual.pdf`
-- Example validation against the uploaded Bs CCQM article: `validation/bs_article_2025/validation_report.pdf`
 
-## GitHub upload
 
-```bash
-git init
-git add .
-git commit -m "Initial CCQM Stage-1 building-block calculator"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repo>.git
-git push -u origin main
-```
 
-Choose a license before making the repository public. See `LICENSE_NOT_SELECTED.md`.
+
