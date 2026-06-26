@@ -9,3 +9,4 @@ assert (out / "results.json").exists()
 assert (out / "report.txt").exists()
 assert (out / "tables" / "form_factors.csv").exists()
 print("smoke test passed")
+
