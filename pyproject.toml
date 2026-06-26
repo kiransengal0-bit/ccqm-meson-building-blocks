@@ -14,3 +14,4 @@ ccqm-stage1 = "ccqm:main"
 
 [tool.setuptools]
 py-modules = ["ccqm", "ccqm_stage1_backend"]
+
