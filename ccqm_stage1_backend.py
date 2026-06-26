@@ -2837,3 +2837,5 @@ def integrate_amplitude(cfg: CCQMConfig, q2: float, evaluator, shape):
         out = np.zeros(shape, dtype=complex)
     prefactor = cfg.Nc * cfg.g_i * cfg.g_f / (4.0 * np.pi * np.pi)
     return prefactor * out
+
+
