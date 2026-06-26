@@ -1,0 +1,45 @@
+# CCQM Stage-1 input file
+# Stage 1 only: g_H, f_H, form factors. No decay widths.
+
+[global]
+lambda_ir = 0.181
+Nc = 3
+n_quad = 8
+
+[mesons]
+# name    kind   M       m1      m2      Lambda    optional_g
+B         P      5.279   5.09    0.235   1.88
+K         P      0.494   0.424   0.235   1.04
+Bs        P      5.367   5.09    0.424   1.95
+phi       V      1.019   0.424   0.424   0.88
+
+[decay_constants]
+B
+K
+Bs
+phi
+
+[transition B_to_K]
+initial = B
+final = K
+final_kind = P
+m1 = 5.09
+m2 = 0.424
+m3 = 0.235
+currents = scalar, vector, tensor
+q2_mode = list
+q2_values = 0, 1, 5
+
+[transition Bs_to_phi]
+initial = Bs
+final = phi
+final_kind = V
+m1 = 5.09
+m2 = 0.424
+m3 = 0.424
+currents = v_minus_a, tensor_plus
+q2_mode = range
+q2_min = 1.0
+q2_max = q2max
+q2_points = 5
+endpoint = false

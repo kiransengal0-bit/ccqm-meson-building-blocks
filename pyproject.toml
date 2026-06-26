@@ -1,0 +1,16 @@
+[project]
+name = "ccqm-stage1-building-blocks"
+version = "0.2.0"
+description = "Stage-1 CCQM building-block calculator for meson couplings, decay constants, and P-to-P/P-to-V form factors."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.23",
+    "matplotlib>=3.6",
+]
+
+[project.scripts]
+ccqm-stage1 = "ccqm:main"
+
+[tool.setuptools]
+py-modules = ["ccqm", "ccqm_stage1_backend"]
